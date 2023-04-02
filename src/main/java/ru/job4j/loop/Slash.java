@@ -2,10 +2,10 @@ package ru.job4j.loop;
 
 public class Slash {
     public static void draw(int size) {
-        for (int row = 1; row <= size; row++) {
-            for (int cell = 0; cell <= size; cell++) {
+        for (int row = 0; row < size; row++) {
+            for (int cell = 0; cell < size; cell++) {
                 boolean left = row == cell;
-                boolean right = row + cell == size + 1;
+                boolean right = cell == size - 1 - row;
                 if (left) {
                     System.out.print("0");
                 } else if (right) {
