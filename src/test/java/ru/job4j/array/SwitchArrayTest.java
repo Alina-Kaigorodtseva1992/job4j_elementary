@@ -18,19 +18,19 @@ public class SwitchArrayTest {
     public void whenSwap0to7() {
         int[] input = {3, 2, 3, 4, 5, 18, 6, 7};
         int source = 3;
-        int dest = input.length - 2;
+        int dest = 6;
         int[] result = SwitchArray.swap(input, source, dest);
         int[] expected = {3, 2, 3, 6, 5, 18, 4, 7};
         assertThat(result).containsExactly(expected);
     }
 
     @Test
-    public void whenSwap0to4() {
-        int[] input = {3, 2, 3, 4, 5};
-        int source = 1;
-        int dest = input.length - 1;
+    public void whenSwap0to5() {
+        int[] input = {3, 2, 3, 4, 5, 7};
+        int source = 3;
+        int dest = 4;
         int[] result = SwitchArray.swap(input, source, dest);
-        int[] expected = {3, 5, 3, 4, 2};
+        int[] expected = {3, 2, 3, 5, 4, 7};
         assertThat(result).containsExactly(expected);
     }
 }
