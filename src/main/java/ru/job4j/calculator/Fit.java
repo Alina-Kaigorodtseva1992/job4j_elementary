@@ -2,23 +2,18 @@ package ru.job4j.calculator;
 
 public class Fit {
 
-    public static double manWeight(short height) {
-        double rsl = (height - 100) * 1.15;
-        return rsl;
-    }
-
-    public static double womanWeight(short height) {
-        double rsl = (height - 110) * 1.15;
-        return rsl;
+    public static double idealWeight(short height, double subtractValue) {
+        return (height - subtractValue) * 1.15;
     }
 
     public static void main(String[] args) {
-        short height = 187;
-        double man = Fit.manWeight(height);
-        System.out.println("Man 187 is " + man);
-        height = 165;
-        double woman = Fit.womanWeight(height);
-        System.out.println("Man 165 is " + woman);
-    }
+        short heightMan = 187;
+        short heightWoman = 170;
 
+        double manWeightResult = idealWeight(heightMan, 100);
+        System.out.println("Man " + heightMan + " cm has ideal weight: " + manWeightResult);
+
+        double womanWeightResult = idealWeight(heightWoman, 110);
+        System.out.println("Woman " + heightWoman + " cm has ideal weight: " + womanWeightResult);
+    }
 }
