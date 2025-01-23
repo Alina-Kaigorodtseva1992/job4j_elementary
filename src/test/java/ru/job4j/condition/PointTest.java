@@ -28,12 +28,12 @@ public class PointTest {
     }
 
     @Test
-    public void when46to31then5() {
-        double expected = 5;
-        int x1 = 4;
-        int y1 = 6;
+    public void when55to32then3Dot6() {
+        double expected = 3.6;
+        int x1 = 5;
+        int y1 = 5;
         int x2 = 3;
-        int y2 = 1;
+        int y2 = 2;
         double out = Point.distance(x1, y1, x2, y2);
         Assert.assertEquals(expected, out, 0.2);
     }

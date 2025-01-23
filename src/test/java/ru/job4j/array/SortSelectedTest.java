@@ -6,9 +6,9 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class SortSelectedTest {
     @Test
     public void whenSort() {
-        int[] data = new int[] {3, 4, 1, 2, 5};
+        int[] data = new int[] {6, 5, 4, 3, 7};
         int[] result = SortSelected.sort(data);
-        int[] expected = new int[] {1, 2, 3, 4, 5};
+        int[] expected = new int[] {3, 4, 5, 6, 7};
         assertThat(result).containsExactly(expected);
     }
 
