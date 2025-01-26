@@ -15,5 +15,6 @@ public class Fit {
 
         double womanWeightResult = idealWeight(heightWoman, 110);
         System.out.println("Woman " + heightWoman + " cm has ideal weight: " + womanWeightResult);
+
     }
 }

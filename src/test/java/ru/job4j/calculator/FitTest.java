@@ -22,6 +22,7 @@ class FitTest {
         double actualWeight = Fit.idealWeight(heightWoman, 110);
 
         assertThat(actualWeight).isEqualTo(expectedWeight);
+
     }
 
 }
